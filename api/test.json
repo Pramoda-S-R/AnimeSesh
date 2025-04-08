@@ -1,0 +1,111 @@
+{
+    pagination: {
+      last_visible_page: 8,
+      has_next_page: true,
+      current_page: 1,
+      items: { count: 1, total: 8, per_page: 1 }
+    },
+    data: [
+      {
+        mal_id: 57334,
+        url: 'https://myanimelist.net/anime/57334/Dandadan',
+        images: [Object],
+        trailer: [Object],
+        approved: true,
+        titles: [Array],
+        title: 'Dandadan',
+        title_english: 'Dan Da Dan',
+        title_japanese: 'ダンダダン',
+        title_synonyms: [],
+        type: 'TV',
+        source: 'Manga',
+        episodes: 12,
+        status: 'Finished Airing',
+        airing: false,
+        aired: [Object],
+        duration: '23 min per ep',
+        rating: 'R - 17+ (violence & profanity)',
+        score: 8.53,
+        scored_by: 390008,
+        rank: 128,
+        popularity: 317,
+        members: 691810,
+        favorites: 10804,
+        synopsis: "Reeling from her recent breakup, Momo Ayase, a popular high schooler, shows kindness to her socially awkward schoolmate, Ken Takakura, by standing up to his bullies. Ken misunderstands her intentions, believing he has made a new 
+  friend who shares his obsession with aliens and UFOs. However, Momo's own eccentric occult beliefs lie in the supernatural 
+  realm; she thinks aliens do not exist. A rivalry quickly brews as each becomes determined to prove the other wrong.\n" +   
+          '\n' +
+          "Despite their initial clash over their opposing beliefs, Momo and Ken form an unexpected but intimate friendship, 
+  a bond forged in a series of supernatural battles and bizarre encounters with urban legends and paranormal entities. As both develop unique superhuman abilities, they learn to supplement each other's weaknesses, leading them to wonder if their newfound partnership may be about more than just survival.\n" +
+          '\n' +
+          '[Written by MAL Rewrite]',
+        background: "Dandadan aired on MBS and TBS' Super Animeism Turbo block.",
+        season: 'fall',
+        year: 2024,
+        broadcast: [Object],
+        producers: [Array],
+        licensors: [Array],
+        studios: [Array],
+        genres: [Array],
+        explicit_genres: [],
+        themes: [],
+        demographics: [Array]
+      }
+    ]
+  }
+   GET / 200 in 155ms
+  {
+    pagination: {
+      last_visible_page: 8,
+      has_next_page: true,
+      current_page: 1,
+      items: { count: 1, total: 8, per_page: 1 }
+    },
+    data: [
+      {
+        mal_id: 57334,
+        url: 'https://myanimelist.net/anime/57334/Dandadan',
+        images: [Object],
+        trailer: [Object],
+        approved: true,
+        titles: [Array],
+        title: 'Dandadan',
+        title_english: 'Dan Da Dan',
+        title_japanese: 'ダンダダン',
+        title_synonyms: [],
+        type: 'TV',
+        source: 'Manga',
+        episodes: 12,
+        status: 'Finished Airing',
+        airing: false,
+        aired: [Object],
+        duration: '23 min per ep',
+        rating: 'R - 17+ (violence & profanity)',
+        score: 8.53,
+        scored_by: 390008,
+        rank: 128,
+        popularity: 317,
+        members: 691810,
+        favorites: 10804,
+        synopsis: "Reeling from her recent breakup, Momo Ayase, a popular high schooler, shows kindness to her socially awkward schoolmate, Ken Takakura, by standing up to his bullies. Ken misunderstands her intentions, believing he has made a new 
+  friend who shares his obsession with aliens and UFOs. However, Momo's own eccentric occult beliefs lie in the supernatural 
+  realm; she thinks aliens do not exist. A rivalry quickly brews as each becomes determined to prove the other wrong.\n" +   
+          '\n' +
+          "Despite their initial clash over their opposing beliefs, Momo and Ken form an unexpected but intimate friendship, 
+  a bond forged in a series of supernatural battles and bizarre encounters with urban legends and paranormal entities. As both develop unique superhuman abilities, they learn to supplement each other's weaknesses, leading them to wonder if their newfound partnership may be about more than just survival.\n" +
+          '\n' +
+          '[Written by MAL Rewrite]',
+        background: "Dandadan aired on MBS and TBS' Super Animeism Turbo block.",
+        season: 'fall',
+        year: 2024,
+        broadcast: [Object],
+        producers: [Array],
+        licensors: [Array],
+        studios: [Array],
+        genres: [Array],
+        explicit_genres: [],
+        themes: [],
+        demographics: [Array]
+      }
+    ]
+  }
