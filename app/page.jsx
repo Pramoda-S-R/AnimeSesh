@@ -5,7 +5,7 @@ import { getTopAnime } from "../api/mal";
 const Home = async () => {
   const topAnime = await getTopAnime();
   return (
-      <div className="flex gap-3 flex-wrap justify-center mx-auto">
+      <div className="flex gap-3 flex-wrap justify-center mx-auto mb-10">
         {topAnime.map((anime, index) => (
           <Animecard anime={anime} key={index} />
         ))}

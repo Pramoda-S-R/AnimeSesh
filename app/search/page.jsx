@@ -28,7 +28,7 @@ const SearchAnime = () => {
     <div className="flex flex-col">
       <SearchBar />
       {query? searchResults?.length > 0 ? (
-        <div className="flex gap-3 flex-wrap w-full p-3">
+        <div className="flex gap-3 flex-wrap justify-center mx-auto py-10">
           {searchResults.map((anime, index) => (
             <Animecard key={index} anime={anime} />
           ))}

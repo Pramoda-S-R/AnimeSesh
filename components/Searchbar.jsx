@@ -76,7 +76,7 @@ export default function SearchBar() {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
-      <kbd className="kbd kbd-sm">Ctrl</kbd>
+      <kbd className="kbd kbd-sm">Ctrl</kbd>+{" "}
       <kbd className="kbd kbd-sm">K</kbd>
     </label>
   );
