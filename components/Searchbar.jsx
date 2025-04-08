@@ -33,7 +33,7 @@ export default function SearchBar() {
   useEffect(() => {
     const handler = setTimeout(() => {
       setDebouncedQuery(query);
-    }, 500);
+    }, 1000);
 
     return () => clearTimeout(handler);
   }, [query]);

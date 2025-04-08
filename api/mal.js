@@ -1,10 +1,10 @@
-const api_url = "https://api.jikan.moe/v4"
+const api_url = "https://api.jikan.moe/v4";
 
 export async function searchAnime({ query, limit = 10 }) {
-
   try {
     const response = await fetch(
-      `${api_url}/anime?q=${encodeURIComponent(query)}&limit=${limit}`
+      `${api_url}/anime?q=${encodeURIComponent(query)}&limit=${limit}`,
+      { next: { revalidate: 3600 } }
     );
     const result = await response.json();
     return result.data; // Jikan returns data inside a `data` key
@@ -14,10 +14,11 @@ export async function searchAnime({ query, limit = 10 }) {
   }
 }
 
-
 export async function getTopAnime() {
   try {
-    const response = await fetch(`${api_url}/top/anime`);
+    const response = await fetch(`${api_url}/top/anime`, {
+      next: { revalidate: 3600 },
+    });
     const result = await response.json();
     return result.data;
   } catch (error) {
@@ -27,11 +28,12 @@ export async function getTopAnime() {
 
 export async function getAnimeByID({ id }) {
   try {
-    const response = await fetch(`${api_url}/anime/${id}`);
+    const response = await fetch(`${api_url}/anime/${id}`, {
+      next: { revalidate: 3600 },
+    });
     const result = await response.json();
     return result.data;
   } catch (error) {
     console.error(`Error fetching anime with ID ${id}:`, error);
   }
 }
-
