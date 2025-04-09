@@ -8,6 +8,7 @@ const Loader = () => {
         <div className='skeleton h-9 w-72'></div>
         <div className='skeleton h-5 w-24'></div>
         <div className='skeleton h-5 w-24'></div>
+        <div className='skeleton h-5 w-24'></div>
         <div className='skeleton h-44 w-[60vw]'></div>
         <div className='skeleton h-6 w-16'></div>
       </div>

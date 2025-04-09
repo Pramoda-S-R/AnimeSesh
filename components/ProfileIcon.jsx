@@ -1,15 +1,14 @@
+import { logout } from "@/app/login/actions";
+import { createClient } from "@/utils/supabase/server";
 import React from "react";
 
-const ProfileIcon = () => {
-  const isLoggedIn = false; // Replace with actual authentication logic
-  if (isLoggedIn) {
-    return (
-      <div className="avatar">
-        <div className="w-10 rounded-full">
-          <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-        </div>
-      </div>
-    );
+const ProfileIcon = async () => {
+  const supabase = await createClient();
+
+  const { data, error } = await supabase.auth.getUser();
+  // const isLoggedIn = false; // Replace with actual authentication logic
+  if (data?.user) {
+    return <button className="btn btn-soft btn-info" onClick={logout}>Logout</button>;
   } else {
     return <button className="btn btn-soft btn-info">Login</button>;
   }
